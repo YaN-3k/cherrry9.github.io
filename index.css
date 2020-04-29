@@ -82,16 +82,13 @@ a:hover {
   .terminal {
     padding: 10px;
     min-width: 98%;
-    height: 100%;
+    height: 98%;
     position: absolute;
     top: 0px;
     left: 0px;
     transform: translateY(-0%);
   }
   * {
-    font-size: 30px;
-  }
-  .pgpkey {
-    height: auto;
+    font-size: 40px;
   }
 }
