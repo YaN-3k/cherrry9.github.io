@@ -1,0 +1,97 @@
+body {
+  color: #d2d4de;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) repeat,
+    url("img.png") no-repeat center fixed;
+  background-color: #161821;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: terminus;
+  src: url("terminus.ttf") format("truetype");
+}
+
+* {
+  font-family: terminus !important;
+  font-size: 20px;
+}
+
+.terminal {
+  width: 50%;
+  min-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(22, 24, 33, 0.8);
+
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+.github {
+  color: rgb(167, 165, 166);
+}
+
+.reddit {
+  color: rgb(229, 88, 41);
+}
+
+.keybase {
+  color: rgb(255, 111, 33);
+}
+
+.matrix {
+  color: rgb(90, 110, 200);
+}
+
+.aur {
+  color: #7289da;
+}
+
+.gpg-dl {
+  color: #7289da;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #6b7089;
+  color: #161821;
+}
+
+.pgpkey {
+  text-align: left;
+  height: 10rem;
+  width: auto;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: gray;
+}
+
+@media only screen and (max-width: 1000px) {
+  .terminal {
+    padding: 10px;
+    min-width: 98%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateY(-0%);
+  }
+  * {
+    font-size: 30px;
+  }
+  .pgpkey {
+    height: auto;
+  }
+}
