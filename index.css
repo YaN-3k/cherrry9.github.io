@@ -52,7 +52,7 @@ body {
   color: #7289da;
 }
 
-.gpg-dl {
+.pgp-dl {
   color: #7289da;
   text-decoration: none;
 }
@@ -64,7 +64,7 @@ a:hover {
 
 .pgpkey {
   text-align: left;
-  height: 10rem;
+  height: 7rem;
   width: auto;
   overflow: auto;
 }
@@ -89,6 +89,9 @@ a:hover {
     transform: translateY(-0%);
   }
   * {
-    font-size: 40px;
+    font-size: 35px;
   }
+	.pgpkey {
+		height: 10rem;
+	}
 }
