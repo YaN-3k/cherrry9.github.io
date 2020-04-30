@@ -8,34 +8,55 @@ body {
   color: #d2d4de;
 }
 
-.fg-blue {
-  color: #84a0c6;
-}
-
 @font-face {
   font-family: terminus;
   src: url("/assets/fonts/terminus.ttf");
 }
 
+.fg-blue {
+  color: #84a0c6;
+}
+.fg-1 {
+  color: #a093c7;
+}
+.fg-2 {
+  color: #b4be82;
+}
+.fg-3 {
+  color: #e2a478;
+}
+.fg-4 {
+  color: #89b8c2;
+}
+
+.github {
+  color: rgb(167, 165, 166);
+}
+.reddit {
+  color: rgb(229, 88, 41);
+}
+.keybase {
+  color: rgb(255, 111, 33);
+}
+.matrix {
+  color: rgb(90, 110, 200);
+}
+
 .h-full {
   height: 100%;
-  overflow: hidden;
+}
+.min-h-full {
+  min-height: 100%;
 }
 
 .flex {
   display: flex;
 }
-
 .flex-col {
   flex-direction: column;
 }
-
 .flex-row {
   flex-direction: row;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .terminal {
@@ -44,7 +65,41 @@ body {
   margin; 1rem;
   border-radius: 10px;
   width: 42rem;
-  margin-top: 10vh;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+
+a:hover {
+  background: #6b7089;
+  color: #161821;
+}
+
+.pgpkey {
+  text-align: left;
+  height: 12rem;
+  width: auto;
+  overflow: auto;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-05 {
+  padding-top: 0.5rem;
+}
+.pt-0 {
+  padding-top: 0rem;
+}
+
+p, pre {
+  margin: 0px !important;
 }
 
 @media only screen and (max-width: 765px) {
@@ -66,6 +121,7 @@ body {
     height: 17rem !important;
     width: auto !important;
     overflow: auto !important;
+    padding-right: 0.5rem;
   }
   .h-99 {
     height: 99vh;
@@ -73,77 +129,16 @@ body {
   .text-075 {
     font-size: 0.75rem !important;
   }
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.github {
-  color: rgb(167, 165, 166);
-}
-
-.reddit {
-  color: rgb(229, 88, 41);
-}
-
-.keybase {
-  color: rgb(255, 111, 33);
-}
-
-.matrix {
-  color: rgb(90, 110, 200);
-}
-
-.aur {
-  color: #7289da;
-}
-
-.pgp-dl {
-  color: #7289da;
-  text-decoration: none;
-}
-
-a:hover {
-  background: #6b7089;
-  color: #161821;
-}
-
-.pgpkey {
-  text-align: left;
-  height: 12rem;
-  width: auto;
-  overflow: auto;
-}
-
-.pt-1 {
-  padding-top: 1rem;
-}
-
-.pt-05 {
-  padding-top: 0.5rem;
-}
-
-.pt-0 {
-  padding-top: 0rem;
-}
-
-p {
-  margin: 0px !important;
-}
-
-pre {
-  margin: 0px !important;
+  .h-full {
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+  }
 }
 
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background: gray;
