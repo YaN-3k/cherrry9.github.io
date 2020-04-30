@@ -7,6 +7,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	background-color: #000000;
+	margin: 0 auto;
 }
 
 @font-face {
@@ -20,17 +22,17 @@ body {
 }
 
 .terminal {
-  width: 50%;
-  min-width: 500px;
+	margin: 0 auto;
+	max-width: 50%;
   padding: 20px;
-  min-height: 100px;
+	min-width: 650px;
   border-radius: 10px;
   background-color: rgb(22, 24, 33, 0.8);
+}
 
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translateY(-50%);
+.desc {
+	width: auto;
+	max-width: 700px;
 }
 
 .github {
@@ -80,39 +82,27 @@ a:hover {
 }
 
 
-@media only screen and (max-height: 700px) {
-  .terminal {
-    padding: 10px;
-    min-width: 800px;
-    width: 98%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translateY(-0%);
-  }
-	* {
-		font-size: 30px;
-	}
-  .pgpkey {
-    height: 10rem;
-  }
-}
+/* @media only screen and (max-height: 700px) { */
+/*   .terminal { */
+/*     padding: 10px; */
+/*     min-width: 800px; */
+/*     width: 98%; */
+/*     position: absolute; */
+/*     top: 0px; */
+/*     left: 0px; */
+/*     transform: translateY(-0%); */
+/*   } */
+/* 	* { */
+/* 		font-size: 40px; */
+/* 	} */
+/*   .pgpkey { */
+/*     height: 10rem; */
+/*   } */
+/* } */
 
 @media only screen and (max-width: 1000px) {
-  .terminal {
-    padding: 10px;
-    height: 100%;
-    min-width: 800px;
-    width: 98%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translateY(-0%);
-  }
-	* {
-		font-size: 30px;
+	.terminal {
+		margin: 0 0;
+		max-width: 95%;
 	}
-  .pgpkey {
-    height: 10rem;
-  }
 }
