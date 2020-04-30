@@ -7,8 +7,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	background-color: #000000;
-	margin: 0 auto;
+  background-color: #000000;
+  margin: 0 auto;
+  flex: auto;
 }
 
 @font-face {
@@ -18,21 +19,22 @@ body {
 
 * {
   font-family: terminus !important;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .terminal {
-	margin: 0 auto;
-	max-width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 50%;
   padding: 20px;
-	min-width: 650px;
+  min-width: 500px;
   border-radius: 10px;
   background-color: rgb(22, 24, 33, 0.8);
 }
 
 .desc {
-	width: auto;
-	max-width: 700px;
+  width: auto;
+  max-width: 700px;
 }
 
 .github {
@@ -81,7 +83,6 @@ a:hover {
   background: gray;
 }
 
-
 /* @media only screen and (max-height: 700px) { */
 /*   .terminal { */
 /*     padding: 10px; */
@@ -101,8 +102,9 @@ a:hover {
 /* } */
 
 @media only screen and (max-width: 1000px) {
-	.terminal {
-		margin: 0 0;
-		max-width: 95%;
-	}
+  .terminal {
+    margin: 0 0;
+    max-width: 95%;
+    height: 100%;
+  }
 }
