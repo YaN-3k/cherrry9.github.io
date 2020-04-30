@@ -1,7 +1,7 @@
 body {
   color: #d2d4de;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) repeat,
-    url("img.png") no-repeat center fixed;
+    url("../img/bg.png") no-repeat center fixed;
   background-color: #161821;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: terminus;
-  src: url("terminus.ttf") format("truetype");
+  src: url("../assets/terminus.ttf") format("truetype");
 }
 
 * {
