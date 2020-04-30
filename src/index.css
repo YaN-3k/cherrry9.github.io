@@ -23,6 +23,7 @@ body {
   width: 50%;
   min-width: 500px;
   padding: 20px;
+		min-height: 100px;
   border-radius: 10px;
   background-color: rgb(22, 24, 33, 0.8);
 
@@ -78,10 +79,26 @@ a:hover {
   background: gray;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .terminal {
     padding: 10px;
-    min-width: 98%;
+    min-width: 600px;
+    width: 98%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateY(-0%);
+  }
+  .pgpkey {
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .terminal {
+    padding: 10px;
+    min-width: 600px;
+    width: 98%;
     position: absolute;
     top: 0px;
     left: 0px;
